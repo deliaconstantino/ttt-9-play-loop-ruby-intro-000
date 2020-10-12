@@ -35,12 +35,10 @@ def turn(board)
   end
 end
 
-# Define your play method below
 def play(board)
-  #call turn if board has open indexes (" " or "")
-  turn = 0
-  while turn < 9
-    turn += 1
+  round = 0
+  while round < 9
+    round += 1
   turn(board)
   end
 end
