@@ -38,8 +38,9 @@ end
 # Define your play method below
 def play(board)
   #call turn if board has open indexes (" " or "")
+  turn = 0
+  while turn < 9
+    turn += 1
   turn(board)
-  while valid_move?(board, index)
-    turn(board)
   end
 end
